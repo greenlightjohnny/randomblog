@@ -26,13 +26,12 @@ const Layout = ({ children }) => {
 
   return (
     <div className={Sect.container}>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
-      <div>5</div>
-      <div>6</div>
+      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+      <div className={Sect.header}>Header</div>
+      <div className={Sect.menu}>Menu</div>
+      <div className={Sect.content}>Content</div>
+      <div className={Sect.footer}>Footer</div>
+
       {children}
     </div>
   )
